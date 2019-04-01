@@ -154,8 +154,8 @@ body{
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 61px;
-    margin-left: -3px;
-    margin-top: 1px;
+    /* margin-left: -3px;
+    margin-top: 1px; */
 }
 /* .features__content{
     margin: 0 180px;
@@ -343,7 +343,7 @@ body{
     line-height: 30px;
     color: #989898;
     font-size: 13px;
-    margin-left: -1px;
+    /* margin-left: -1px; */
     display: inline;
 }
 .news__desc-title{
@@ -430,10 +430,10 @@ body{
     font-size: 13px;
 }
 .pagination__pages li:last-child{
-    margin-right:0px;
+    margin-right:17px;
 }
 .pagination__next{
-    margin-left:17px;
+    /* margin-left:17px; */
 }
 .footer{
     background-color: #000;
