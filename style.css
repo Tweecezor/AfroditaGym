@@ -12,6 +12,9 @@
     font-style: normal;
 
 }
+.main-content{
+    padding-bottom: 60px;
+}
 body{
     font-family: 'Open Sans', sans-serif, Arial;
 }
@@ -21,7 +24,7 @@ body{
 }
 .container{
     width:1100px;
-    margin: auto;
+    margin: 0 auto;
     position: relative;
 }
 .features{
@@ -215,8 +218,9 @@ body{
 }
 .features__list{
     list-style: none;
-    margin: 0 180px;
+    /* margin: 0 180px; */
     display: flex;
+    justify-content: center;
 }
 .features__adv-list{
     text-align: left;
@@ -339,7 +343,7 @@ body{
     /* float: left; */
     width: 926px;
     font-family: 'Roboto', sans-serif, Arial;
-    margin-bottom: 72px;
+    margin-bottom: 67px;
 }
 .news__item{
     margin-bottom: 30px;
@@ -353,7 +357,7 @@ body{
     /* float:left; */
 }
 .news__item:nth-child(2) .news__desc{
-    margin-top:15px;
+    margin-top:18px;
 }
 .news__item:nth-child(3) .news__desc{
     margin-top:14px;
@@ -406,8 +410,8 @@ body{
 .pagination{
     display: flex;
     justify-content: center;
-    margin-bottom: 59px;
-    padding-left: 25px;
+    /* margin-bottom: 59px; */
+    /* padding-left: 25px; */
 }
 .pagination__display{
     /* float:left;   
@@ -424,24 +428,26 @@ body{
 }
 .pagination__pages{
     list-style: none;
+    display: flex;
 }
-.pagination__pages-item{
+/* .pagination__pages-item{
     float:left;
-}
+} */
 .pagination__link:hover{
     color: #f89513;
 }
 .pagination__controlls{
 
-    display: inline-block;
-    width:240px;
+    /* display: inline-block;
+    width:240px; */
+    display: flex;
     /* margin-left: 21px; */
     position: relative;
 }
-.pagination__next{
+/* .pagination__next{
     position: absolute;
     right: 28px;
-}
+} */
 
 .pagination__link{
     text-decoration: none;
@@ -564,8 +570,9 @@ body{
 .breadcrumbs{
     /* background: red; */
     display: flex;
-    width: 873px;
+    /* width: 873px; */
     margin-bottom: 10px;
+    padding-left: 113px;
 }
 .breadcrumbs__list{
     display: flex;
@@ -621,10 +628,10 @@ body{
     margin-right: 21px;
     margin-top: 10px;
 }
-/* .pagination--reviews{
+.pagination--reviews{
     margin-bottom: 59px;
-    padding-left: 25px;
-} */
+    /* padding-left: 25px; */
+}
 .avatar{
     border-radius: 50%;
     width:160px;
@@ -736,8 +743,9 @@ body{
 .section-title{
     font-size: 50px;
     text-transform: uppercase;
-    width: 455px;
-    text-align: center;
+    /* width: 455px;
+    text-align: center; */
+    padding-left: 106px;
     letter-spacing: 2px;
     margin-bottom: 24px;
 }
@@ -751,7 +759,7 @@ body{
     padding-bottom: 61px;
 }
 .services__title{
-    width: 432px;
+    /* width: 432px; */
     margin-bottom: 34px;
 }
 .services__list{
