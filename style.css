@@ -831,6 +831,8 @@ body{
 .main-content--services{
     padding-top: 37px;
     padding-bottom: 61px;
+    width: 880px;
+    margin: 0 auto;
 }
 .services__title{
     /* width: 432px; */
@@ -839,7 +841,7 @@ body{
 .services__list{
     display: flex;
     list-style: none;
-    width: 880px;
+    /* width: 880px; */
     flex-wrap: wrap;
     margin: 0 auto;
     margin-bottom: 11px;
@@ -888,11 +890,12 @@ body{
 }
 .partners__list{
     display: flex;
-    width: 827px;
+    /* width: 827px; */
     /* background: red; */
     flex-wrap: wrap;
     list-style: none;
     margin: 0 auto;
+    padding-left: 25px;
 }
 .partners__item{
     width: 200px;
