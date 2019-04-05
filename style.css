@@ -27,6 +27,14 @@ body{
     margin: 0 auto;
     position: relative;
 }
+.container--services{
+    width: 880px;
+    margin: 0 auto;
+}
+.container--reviews{
+    width: 878px;
+    margin: 0 auto;
+}
 .features{
     background-color:black;
 }
@@ -675,8 +683,8 @@ body{
     padding-top: 39px;
     padding-bottom: 61px;
     /* padding-left: 209px; */
-    width: 878px;
-    margin: 0 auto;
+    /* width: 878px;
+    margin: 0 auto; */
 }
 .reviews{
     padding-bottom: 42px;
@@ -831,8 +839,8 @@ body{
 .main-content--services{
     padding-top: 37px;
     padding-bottom: 61px;
-    width: 880px;
-    margin: 0 auto;
+    /* width: 880px;
+    margin: 0 auto; */
 }
 .services__title{
     /* width: 432px; */
