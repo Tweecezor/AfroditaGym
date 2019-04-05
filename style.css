@@ -127,12 +127,71 @@ body{
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1.2px;
+    position: relative;
 }
-.nav-menu__item:hover .nav-menu__text{
+.nav-menu__item:first-child .nav-menu__text::before{
+    content: '';
+    background-image: url(image/main_icon.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    right: 77px;
+    top: -3px;
+}
+.nav-menu__item:nth-child(2) .nav-menu__text::before{
+    content: '';
+    background-image: url(image/feed_icon.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    right: 77px;
+    top: -3px;
+}
+.nav-menu__item:last-child .nav-menu__text::before{
+    content: '';
+    background-image: url(image/service_icon.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    right: 77px;
+    top: 0px;
+}
+.nav-menu__item:first-child .nav-menu__text:hover::before{
+    content: '';
+    background-image: url(image/main-icon-orange.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    right: 77px;
+    top: -3px;
+}
+.nav-menu__item:nth-child(2) .nav-menu__text:hover::before{
+    content: '';
+    background-image: url(image/reviews-icon-orange.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    right: 77px;
+    top: -3px;
+}
+.nav-menu__item:last-child .nav-menu__text:hover::before{
+    content: '';
+    background-image: url(image/service_icon_orange.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    right: 77px;
+    top: 0px;
+}
+
+.nav-menu__text:hover{
     color: #f89513;
-}
-.nav-menu__item:hover .nav-icon{
-    fill: #f89513;
 }
 .contacts{
    /* float:right; */
@@ -573,6 +632,9 @@ body{
     display: flex;
     /* width: 873px; */
     margin-bottom: 10px;
+    /* padding-left: 113px; */
+}
+.breadcrumbs--wrap{
     padding-left: 113px;
 }
 .breadcrumbs__list{
@@ -613,7 +675,7 @@ body{
     list-style: none;
     width: 878px;
     margin: 0 auto;
-    margin-bottom: 42px;
+    padding-bottom: 42px;
 }
 .reviews__item{
     display: flex;
