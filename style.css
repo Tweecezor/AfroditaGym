@@ -443,6 +443,7 @@ body{
     margin-top: 6px;
     line-height: 30px;
     font-size: 17px;
+    width: 686px;
 }
 
 .sidenews{
@@ -638,7 +639,7 @@ body{
     /* padding-left: 113px; */
 }
 .breadcrumbs--wrap{
-    padding-left: 113px;
+    /* padding-left: 113px; */
 }
 .breadcrumbs__list{
     display: flex;
@@ -673,13 +674,16 @@ body{
 .main-content--reviews{
     padding-top: 39px;
     padding-bottom: 61px;
+    /* padding-left: 209px; */
+    width: 878px;
+    margin: 0 auto;
 }
 .reviews{
     padding-bottom: 42px;
 }
 .reviews__list{
     list-style: none;
-    width: 878px;
+    /* width: 878px; */
     margin: 0 auto;
     /* padding-bottom: 42px; */
 }
@@ -815,7 +819,7 @@ body{
     text-transform: uppercase;
     /* width: 455px;
     text-align: center; */
-    padding-left: 106px;
+    /* padding-left: 106px; */
     letter-spacing: 2px;
     margin-bottom: 24px;
 }
