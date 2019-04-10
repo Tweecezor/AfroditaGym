@@ -822,6 +822,52 @@ body{
 .leave-reviews__button:hover{
     background-color: #f89513;
     cursor: pointer;
+
+}
+.leave-reviews__radio{
+    display:none;
+}
+.radio-label{
+    position: relative;
+    margin-left: 32px;
+}
+.radio-label::before{
+    content:'';
+    position: absolute;
+    width:20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    border:1px solid grey;
+    top: 0px;
+    left: -27px;
+}
+ .radio-label::after{
+    content:'';
+    position: absolute;
+    width:10px;
+    height: 10px;
+    background:  #f89513;
+    border-radius: 50%; 
+}
+.radio-label-no::after{
+    right: 36px;
+    top: 5px;
+    opacity: 0;
+}
+.radio-label-yes::after{
+    right: 28px;
+    top:5px;
+    opacity: 0;
+}
+.leave-reviews__radio:checked + .radio-label::before{
+    border:1px solid #f89513;
+}
+.leave-reviews__radio:checked + .radio-label-no::after{
+    opacity: 1;
+}
+.leave-reviews__radio:checked + .radio-label-yes::after{
+    opacity: 1;
 }
 .section-title{
     font-size: 50px;
