@@ -266,13 +266,9 @@ body{
     color: #b46f14;
     font-weight: 600;
     /* margin-left: 54px; */
-    /* position: absolute;
-    top: 30px;
-    left: 55px; */
     text-align: right;
-    display: block;
+    /* display: block; */
     letter-spacing: 0.5px;
-  
 }
 .header__picture{
    text-align:center;
@@ -533,6 +529,7 @@ body{
     line-height: 30px;
     font-size: 18px;
     width: 640px;
+    font-weight: normal;
 }
 .news__container{
     display: flex;
@@ -1285,6 +1282,9 @@ body{
 }
 .dropdown__schedule{
     position: relative;
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    margin-left: 54px;
 }
 .dropdown__schedule:hover{
     cursor: pointer;
@@ -1300,7 +1300,7 @@ body{
     font-size: 14px;
     opacity: 0;
     top: 32px;
-    /* right: 0px; */
+    right: 0px;
     border-radius: 3px;
     box-shadow: 0 0 10px 0 rgba(23, 59, 117, 0.55);
 }
@@ -1313,12 +1313,12 @@ body{
     right: 0;
 }
 .contacts__work-time::after{
-    content:'';
+    content: '';
     display: block;
-    height:30px;
-    left:0;
+    height: 30px;
+    left: 0;
     right: 0;
-    top: -29px;
+    top: -10px;
     position: absolute;
 }
 .work-text{
