@@ -157,63 +157,93 @@ body{
 }
 .nav-menu__item:first-child .nav-menu__text::before{
     content: '';
-    background-image: url(image/main_icon.png);
+    background: url(image/nav_images_sprites.png) -10px -48px;
     background-repeat: no-repeat;
-    width: 20px;
-    height: 18px;
+    width: 19px; 
+    height: 14px;
     position: absolute;
-    right: 84px;
-    top: 3px;
+    right: 80px;
+    top: 2px;
 }
 .nav-menu__item:nth-child(2) .nav-menu__text::before{
     content: '';
-    background-image: url(image/feed_icon.png);
+    background: url(image/nav_images_sprites.png) -10px -10px;
     background-repeat: no-repeat;
     width: 20px;
-    height: 18px;
+     height: 18px;
     position: absolute;
-    right: 78px;
+    right: 74px;
     top: 0px;
 }
 .nav-menu__item:last-child .nav-menu__text::before{
     content: '';
-    background-image: url(image/service_icon.png);
+    background: url(image/nav_images_sprites.png) -90px -10px;
     background-repeat: no-repeat;
-    width: 20px;
-    height: 18px;
+    width: 19px;
+    height: 14px;
     position: absolute;
-    right: 69px;
-    top: 3px;
+    right: 71px;
+    top: 0px;
 }
 .nav-menu__item:first-child .nav-menu__text:hover::before{
     content: '';
-    background-image: url(image/main-icon-orange.png);
+    background: url(image/nav_images_sprites.png) -49px -48px;
     background-repeat: no-repeat;
-    width: 20px;
-    height: 18px;
+    width: 19px;
+    height: 14px;
     position: absolute;
-    right: 84px;
-    top: 3px;
+    right: 80px;
+    top: 2px;
 }
 .nav-menu__item:nth-child(2) .nav-menu__text:hover::before{
     content: '';
-    background-image: url(image/reviews-icon-orange.png);
+    background: url(image/nav_images_sprites.png) -50px -10px;
     background-repeat: no-repeat;
     width: 20px;
     height: 18px;
     position: absolute;
-    right: 78px;
+    right: 74px;
     top: 0px;
 }
 .nav-menu__item:last-child .nav-menu__text:hover::before{
     content: '';
-    background-image: url(image/service_icon_orange.png);
+    background: url(image/nav_images_sprites.png) -90px -44px;
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 14px;
+    position: absolute;
+    right: 71px;
+    top: 0px;
+}
+.nav-menu__item:last-child  .nav-menu__text--current-page::before{
+    content: '';
+    background: url(image/nav_images_sprites.png) -90px -44px;
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 14px;
+    position: absolute;
+    right: 71px;
+    top: 0px;
+}
+.nav-menu__item:nth-child(2) .nav-menu__text--current-page::before{
+    content: '';
+    background: url(image/nav_images_sprites.png) -50px -10px;
     background-repeat: no-repeat;
     width: 20px;
     height: 18px;
     position: absolute;
-    right: 69px;
-    top: 3px;
+    right: 74px;
+    top: 0px;
+}
+.nav-menu__item:first-child  .nav-menu__text--current-page::before{
+    content: '';
+    background: url(image/nav_images_sprites.png) -49px -48px;
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 14px;
+    position: absolute;
+    right: 80px;
+    top: 2px;
 }
 
 .nav-menu__text:hover{
@@ -1253,6 +1283,12 @@ body{
         opacity:1;
     }
 }
+.dropdown__schedule{
+    position: relative;
+}
+.dropdown__schedule:hover{
+    cursor: pointer;
+}
 .contacts__work-time{
     position: absolute;
     display: flex;
@@ -1263,11 +1299,10 @@ body{
     height: 80px;
     font-size: 14px;
     opacity: 0;
-    top: 70px;
-    right: 0px;
+    top: 32px;
+    /* right: 0px; */
     border-radius: 3px;
     box-shadow: 0 0 10px 0 rgba(23, 59, 117, 0.55);
-  
 }
 .contacts__work-time::before{
     content: '';
@@ -1277,19 +1312,29 @@ body{
     top: -32px;
     right: 0;
 }
+.contacts__work-time::after{
+    content:'';
+    display: block;
+    height:30px;
+    left:0;
+    right: 0;
+    top: -29px;
+    position: absolute;
+}
 .work-text{
     color: #f89513;
     font-weight: bold;
 }
-.contacts__schedule:hover{
+.dropdown__schedule:hover .contacts__schedule{
     color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
-    
 }
-.contacts__schedule:hover ~ .contacts__work-time{
-
+.dropdown__schedule:hover .contacts__work-time{
     opacity: 1;
     transition: 0.5s; 
-    transition: opacity .4s;
+    /* transition: opacity .4s; */
     z-index:5;
+}
+.nav-menu__text--current-page{
+    color: #f89513;
 }
