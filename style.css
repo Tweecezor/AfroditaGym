@@ -1298,9 +1298,9 @@ body{
     width: 160px;
     height: 80px;
     font-size: 14px;
-    opacity: 0;
-    top: 32px;
-    right: 0px;
+    /* opacity: 0; */
+    top: 39px;
+    right: -10000px;
     border-radius: 3px;
     box-shadow: 0 0 10px 0 rgba(23, 59, 117, 0.55);
 }
@@ -1318,7 +1318,7 @@ body{
     height: 30px;
     left: 0;
     right: 0;
-    top: -10px;
+    top: -21px;
     position: absolute;
 }
 .work-text{
@@ -1330,8 +1330,9 @@ body{
     cursor: pointer;
 }
 .dropdown__schedule:hover .contacts__work-time{
-    opacity: 1;
-    transition: 0.5s; 
+    /* opacity: 1; */
+    right: 0;
+    /* transition: 0.5s;  */
     /* transition: opacity .4s; */
     z-index:5;
 }
