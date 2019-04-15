@@ -529,7 +529,7 @@ body{
     line-height: 30px;
     font-size: 18px;
     width: 640px;
-    font-weight: normal;
+    font-weight: 300;
 }
 .news__container{
     display: flex;
